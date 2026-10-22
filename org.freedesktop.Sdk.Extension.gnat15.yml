@@ -2,9 +2,9 @@
 # SPDX-License-Identifier: CC0-1.0
 
 id: org.freedesktop.Sdk.Extension.gnat15
-branch: '24.08'
+branch: '25.08'
 runtime: org.freedesktop.Sdk
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 build-extension: true
 separate-locales: false
@@ -17,13 +17,13 @@ modules:
       - only-arches:
           - aarch64
         type: archive
-        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-15.1.0-2/gnat-aarch64-linux-15.1.0-2.tar.gz
-        sha256: 058fc2ee214952dc14c0ae7b0fb932e0afcd09854822ce806e3436bfb9547cbb
+        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-15.3.0-1/gnat-aarch64-linux-15.3.0-1.tar.gz
+        sha256: 322175876bf67b11d91b5cb8dea14da24b2f89f13292887222cf7f47a57f1db7
       - only-arches:
           - x86_64
         type: archive
-        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-15.1.0-2/gnat-x86_64-linux-15.1.0-2.tar.gz
-        sha256: f0e902c010158a79d04c06d3aee5b5999875d9b4c66c876009deffcaa3639df3
+        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-15.3.0-1/gnat-x86_64-linux-15.3.0-1.tar.gz
+        sha256: a6af58cbe96b8ed92b9d9929f89547c1be2ce96b86bb86422026074094429001
 
   - name: gnatprove
     buildsystem: simple
@@ -33,8 +33,9 @@ modules:
       - only-arches:
           - aarch64
         type: archive
-        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnatprove-15.1.0-1/gnatprove-aarch64-darwin-15.1.0-1.tar.gz
-        sha256: a4a9bb7cb0d6a80c422e9e490aa337d8b1ae7b68079be19724761ce3404a5c1a
+        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnatprove-15.1.0-1/gnatprove-aarch64-linux-15.1.0-1.tar.gz
+        sha256: 5131b7ccf04bb2c4ed12bd3e65ad92889f48ff1fabab257c6fa8407f067db7de
+
       - only-arches:
           - x86_64
         type: archive
@@ -49,13 +50,14 @@ modules:
       - only-arches:
           - aarch64
         type: archive
-        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gprbuild-25.0.0-1/gprbuild-aarch64-linux-25.0.0-1.tar.gz
-        sha256: 5e58c08eb6d0bd15f98654777a53fbb1e4329e38fec7074de08429989850562b
+        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gprbuild-26.0.0-1/gprbuild-aarch64-linux-26.0.0-1.tar.gz
+        sha256: c125424447144944973d24de43a53b3e7008dbda306e0d540db07e635dea24e4
+
       - only-arches:
           - x86_64
         type: archive
-        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gprbuild-25.0.0-1/gprbuild-x86_64-linux-25.0.0-1.tar.gz
-        sha256: 9a2e6cfb9c4add85c7c411e95533c46728aae7de19a9a0b056abf53bd9795b0d
+        url: https://github.com/alire-project/GNAT-FSF-builds/releases/download/gprbuild-26.0.0-1/gprbuild-x86_64-linux-26.0.0-1.tar.gz
+        sha256: e3f27f2515ec04d963f6badade6595993b1c091ba15d1919a7c75aad1b7ed49b
 
   - name: alire
     buildsystem: simple
@@ -65,13 +67,14 @@ modules:
       - only-arches:
           - aarch64
         type: archive
-        url: https://github.com/alire-project/alire/releases/download/v2.1.0/alr-2.1.0-bin-aarch64-linux.zip
-        sha256: 5d4d711e2ae347532c931212b9aeca9eba1d9ab87d6d819c262bb2c5d423d363
+        url: https://github.com/alire-project/alire/releases/download/v2.1.1/alr-2.1.1-bin-aarch64-linux.zip
+        sha256: d76c93ad3dc631826144e10bdabc6b3bf98783805bebfd5e4a0e852dd524d812
+
       - only-arches:
           - x86_64
         type: archive
-        url: https://github.com/alire-project/alire/releases/download/v2.1.0/alr-2.1.0-bin-x86_64-linux.zip
-        sha256: e3b32cb0afe981b23d1a68da77452cf81ee1d82de8ebaf01c5e233be8b463fbe
+        url: https://github.com/alire-project/alire/releases/download/v2.1.1/alr-2.1.1-bin-x86_64-linux.zip
+        sha256: 09c66bcd8c35dd4b97b72c3d9b76e44caa6964a2db35aba069f396f00f1f64c7
 
   - name: enable-sh
     buildsystem: simple

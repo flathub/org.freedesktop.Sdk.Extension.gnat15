@@ -32,14 +32,14 @@ Flatpak automatically mounts SDK extensions to `/usr/lib/sdk/${sdk_name}` within
 . /usr/lib/sdk/gnat15/enable.sh
 ```
 
-If it's an application using Freedesktop SDK as its runtime (e.g. `com.vscodium.vscodium`), it likely follows the [ide-flatpak-wrapper] convention. Add an environment variable `FLATPAK_ENABLE_SDK_EXT=${sdk_names}` before launching it, where `${sdk_names}` is a comma-separated list of SDK extension names or `*` which simply turns on all available extensions. This can usually be done via Flatpak permission settings with any of `flatpak` command-line, KDE System Settings or [Flatseal].
+If it's an application using Freedesktop SDK as its runtime (e.g. `com.vscodium.codium`), it likely follows the [ide-flatpak-wrapper] convention. Add an environment variable `FLATPAK_ENABLE_SDK_EXT=${sdk_names}` before launching it, where `${sdk_names}` is a comma-separated list of SDK extension names or `*` which simply turns on all available extensions. This can usually be done via Flatpak permission settings with any of `flatpak` command-line, KDE System Settings or [Flatseal].
 
 ```sh
 # One-time setting
-FLATPAK_ENABLE_SDK_EXT=gnat15 flatpak run com.vscodium.vscodium
+FLATPAK_ENABLE_SDK_EXT=gnat15 flatpak run com.vscodium.codium
 
 # Permanent setting
-flatpak override --env=FLATPAK_ENABLE_SDK_EXT=gnat15 com.vscodium.vscodium
+flatpak override --env=FLATPAK_ENABLE_SDK_EXT=gnat15 com.vscodium.codium
 ```
 
 To use this extension when building other Flatpak applications, add the ID to `sdk-extensions`, then `source` the enable script to add executables to `$PATH`:

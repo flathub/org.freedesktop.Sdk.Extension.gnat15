@@ -22,11 +22,25 @@
   </developer>
   <content_rating type="oars-1.1" />
   <url type="homepage">https://www.gnu.org/software/gnat</url>
-  <url type="help">https://gcc.gnu.org/onlinedocs/gcc-5.1.0/gnat_ugn</url>
+  <url type="help">https://gcc.gnu.org/onlinedocs/gcc-15.1.0/gnat_ugn</url>
   <url type="vcs-browser">https://github.com/alire-project/GNAT-FSF-builds</url>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <releases>
+    <release version="15.3.0-1+flatpak.1" date="2026-10-22">
+      <description>
+        <p>This release updates the following components:</p>
+        <ul>
+          <li>GNAT: from 15.1.0-2 to 15.3.0-1</li>
+          <li>GPRbuild: from 25.0.0-1 to 26.0.0-1</li>
+          <li>Alire: from 2.1.0 to 2.1.1</li>
+        </ul>
+        <p>The following components remain unchanged:</p>
+        <ul>
+          <li>GNATprove: 15.1.0-1</li>
+        </ul>
+      </description>
+    </release>
     <release version="15.1.0-2+flatpak.1" date="2025-06-22">
       <description>
         <p>This release contains the following components:</p>
