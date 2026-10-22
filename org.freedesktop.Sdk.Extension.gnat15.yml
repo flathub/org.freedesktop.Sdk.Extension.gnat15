@@ -12,7 +12,7 @@ modules:
   - name: gnat
     buildsystem: simple
     build-commands:
-      - cp -a . "${FLATPAK_DEST}/"
+      - cp -R * "${FLATPAK_DEST}"
     sources:
       - only-arches:
           - aarch64
@@ -28,7 +28,7 @@ modules:
   - name: gnatprove
     buildsystem: simple
     build-commands:
-      - cp -a . "${FLATPAK_DEST}/"
+      - cp -R * "${FLATPAK_DEST}"
     sources:
       - only-arches:
           - aarch64
@@ -45,7 +45,7 @@ modules:
   - name: gprbuild
     buildsystem: simple
     build-commands:
-      - cp -a . "${FLATPAK_DEST}/"
+      - cp -R * "${FLATPAK_DEST}"
     sources:
       - only-arches:
           - aarch64
